@@ -1,0 +1,26 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFzaGlkIiwiaWF0IjoxNjIxNzU2NDc0LCJleHAiOjE2MjE3NTY1MTl9.49ZRglopdMd0iXqSmBnpASnbqFvxvgrJs_Gcg-MkAqU
+### 
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFzaGlkIiwiaWF0IjoxNjIxNzU3OTIyfQ.GZPlz4TNkHSAhmkbWFdT9sI_v2g_WZz42HcJmDXdBms"
+}
+###
+
+POST  http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFzaGlkIiwiaWF0IjoxNjIxNzU3OTIyfQ.GZPlz4TNkHSAhmkbWFdT9sI_v2g_WZz42HcJmDXdBms"
+}
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+ 
+{
+    "username": "Rashid"
+}
